@@ -1,0 +1,92 @@
+:root {
+    --space: 18px;
+    --radius: 14px;
+    --transition: 0.35s ease;
+
+    --bg-body: #ffffff;
+    --bg-surface: #fdfdfd;
+    --text-main: #1d1d1d;
+    --accent: #0068ff;
+    --shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+.theme-dark {
+    --bg-body: #121212;
+    --bg-surface: #1b1b1b;
+    --text-main: #efefef;
+    --accent: #5aa8ff;
+    --shadow: 0 6px 18px rgba(255,255,255,0.06);
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg-body);
+    color: var(--text-main);
+    font-family: "Segoe UI", sans-serif;
+    transition: background var(--transition), color var(--transition);
+}
+
+h1, h2 {
+    font-weight: 600;
+}
+.topbar {
+    background: var(--bg-surface);
+    padding: var(--space);
+    box-shadow: var(--shadow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#toggleTheme {
+    padding: 10px 18px;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-size: 14px;
+    transition: var(--transition);
+}
+
+#toggleTheme:hover {
+    transform: scale(1.05);
+}
+.container {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 0 var(--space);
+    display: grid;
+    gap: 24px;
+}
+.panel {
+    background: var(--bg-surface);
+    padding: var(--space);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.panel:hover {
+    transform: translateY(-6px);
+}
+.footer {
+    margin-top: 40px;
+    padding: var(--space);
+    text-align: center;
+    background: var(--bg-surface);
+    box-shadow: var(--shadow);
+}
+
+@mixin card-style {
+  background: var(--bg-surface);
+  padding: var(--space);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+.panel {
+  @include card-style;
+  &:hover {
+    transform: translateY(-6px);
+  }
+}

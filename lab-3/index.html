@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Regestration From</title>
+     <link rel="stylesheet" href="index.css">
+</head>
+<body align="center">
+    <form name="form1" action="sucess.html">
+        <h1>Community Event Regestration From</h1>
+        <table border="0" align="center">
+            <tr>
+                <td>Name:</td>
+            <td><input type="text" name="user name" required ></td></tr>
+                <tr><td>EMAIL:</td>
+                <td> <input type="email" name="e1" required></td></tr>
+         </table>
+           <h4>Gender:</h4> <br> <input type="radio" name="gender" required>Male
+        <input type="radio" name="gender" required>Female<br></br>
+       <h4>Hobby</h4>  <br> <input type="checkbox" name="hobby 1" required>  Sports
+        <input type="checkbox" name="hobby2" required>  Music<br></br>
+        <h4>Select Event:</h4>  <br>
+        <select name="menu">
+            <option value="cse">Workshop</option>
+            <option value="ece">Seminar</option>
+            <option value="eee">Sports Activity</option>
+        </select><br><br>  
+        <div class="form-group check-group">
+        <span> <h4>Preferences:</h4></span>
+        <label><input type="radio" name="pref" value="morning"> Morning Session</label>
+        <label><input type="radio" name="pref" value="afternoon"> Afternoon Session</label>
+        <label><input type="radio" name="pref" value="evening"> Evening Session</label>
+      </div><br>
+        <button type="submit">Register</button>
+        <input type="reset" value="reset">
+
+    
+    </form>
+    
+</body>
+</html>

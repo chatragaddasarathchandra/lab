@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCSS Theme Layout</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="theme-light">
+
+    <header class="topbar">
+        <h1>Smart UI Panel</h1>
+        <button id="toggleTheme">Toggle Theme</button>
+    </header>
+
+    <section class="container">
+
+        <div class="panel">
+            <h2>Dashboard Overview</h2>
+            <p>This interface uses a fully variable-based theming system built with SCSS logic.</p>
+        </div>
+
+        <div class="panel">
+            <h2>Core Features</h2>
+            <ul>
+                <li>Dynamic theme switching</li>
+                <li>SCSS-style variable grouping</li>
+                <li>Clean nested UI structure</li>
+            </ul>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 SmartUI Framework</p>
+    </footer>
+
+    <script>
+        const body = document.body;
+        document.getElementById("toggleTheme").addEventListener("click", () => {
+            body.classList.toggle("theme-dark");
+            body.classList.toggle("theme-light");
+        });
+    </script>
+
+</body>
+</html>

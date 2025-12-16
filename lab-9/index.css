@@ -1,0 +1,11 @@
+#destinations {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(calc(100% / 3), 1fr));
+  gap: 15px;
+}
+
+.card {
+  background: #e3f2fd;
+  padding: 15px;
+  border-radius: 10px;
+}
