@@ -1,13 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Experiment 9 - Travel API</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Explorer</title>
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <h1>🌍 Travel Destinations</h1>
-  <button onclick="loadData()">Load Destinations</button>
-  <div id="destinations"></div>
+  <header>
+    <h1>✈ Travel Explorer</h1>
+    <button id="loadBtn">Load Destinations</button>
+  </header>
+
+  <main id="content">
+    <!-- Dynamic destinations will load here -->
+  </main>
+
+  <footer>
+    <p>Powered by Async API Calls & CSS calc()</p>
+  </footer>
 
   <script src="index.js"></script>
 </body>

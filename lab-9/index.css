@@ -1,11 +1,65 @@
-#destinations {
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to right, #f0f4f8, #d9e4ec);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: #0077b6;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+header button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #90e0ef;
+  color: #023e8a;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+main {
+  flex: 1;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(calc(100% / 3), 1fr));
-  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(calc(33% - 20px), 1fr));
+  gap: 20px;
+  padding: 20px;
+  transition: all 0.3s ease;
 }
 
 .card {
-  background: #e3f2fd;
-  padding: 15px;
+  background: white;
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 1rem;
+  text-align: center;
+}
+
+.card img {
+  width: calc(100% - 10px);
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+footer {
+  background: #0077b6;
+  color: white;
+  text-align: center;
+  padding: 1rem;
 }
